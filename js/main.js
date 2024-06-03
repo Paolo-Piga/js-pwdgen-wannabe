@@ -1,30 +1,21 @@
-class User{
-    constructor(nome, cognome, colore, pw){
-        this.name = nome;
-        this.surname = cognome;
-        this.colore = colore;
-        this.pw = pw;
-    }
-}
+// Nome
+let nome = prompt("Come ti chiami?");
 
-// variabile 
-var user1 = new User();
+console.log(nome);
 
-// nome
-user1.nome = prompt("come ti chiami?");
+// Cognome
+let cognome = prompt("Qual è il tuo cognome?")
 
-// cognome
-user1.cognome = prompt("qual e il tuo cognome?");
+console.log(cognome);
 
-// colore
-user1.colore = prompt("qual e il tuo colore preferito?");
+// Colore preferito
+let colore = prompt("Qual è il tuo colore preferito");
 
-// password
+console.log(colore);
 
-user1.pw = user1.nome + user1.cognome + user1.colore + "23";
+// Risposte
+let risposte = nome + cognome + colore + "23";
 
-alert(`La tua password è stata generata! ${user1.nome}${user1.cognome}${user1.colore}23`);
+console.log(risposte);
 
-console.log(user1.nome + user1.cognome + user1.colore + "23");
-
-document.getElementById(`User`).innerHTML = `La tua password è: ${user1.pw}`;
+document.getElementById("User").innerHTML = `La password è: ${risposte}`
